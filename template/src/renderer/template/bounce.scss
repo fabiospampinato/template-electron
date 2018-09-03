@@ -1,0 +1,15 @@
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: .25s;
+  animation-iteration-count: 1;
+}

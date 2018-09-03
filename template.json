@@ -1,0 +1,8 @@
+{
+  "variablesOrder": ["name", "description", "version", "author", "owner", "email", "scoped"],
+  "variables": {
+    "version": {
+      "default": "1.0.0"
+    }
+  }
+}
