@@ -24,8 +24,8 @@
     }
   },
   "build": {
-    "appId": "com.{{owner}}.${name}",
-    "copyright": "Copyright © {{eval "new Date ().getFullYear ()"}}-present ${author}",
+    "appId": "com.{{owner}}.{{name}}",
+    "copyright": "Copyright © {{eval "new Date ().getFullYear ()"}}-present {{author}}",
     "directories": {
       "output": "releases"
     },
