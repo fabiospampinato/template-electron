@@ -8,8 +8,8 @@
 
 ## Install
 
-```shell
-$ npm install --save {{#scoped}}@{{owner}}/{{/scoped}}{{name}}
+```sh
+npm install --save {{#scoped}}@{{owner}}/{{/scoped}}{{name}}
 ```
 
 ## License

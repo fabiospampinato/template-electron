@@ -12,7 +12,7 @@ A template for starting a new electron app quickly.
 Install the template locally with:
 
 ```
-$ template install fabiospampinato/template-electron electron
+template install fabiospampinato/template-electron electron
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ $ template install fabiospampinato/template-electron electron
 Create a new template with:
 
 ```
-$ template create electron my-app
+template create electron my-app
 ```
 
 ## License
