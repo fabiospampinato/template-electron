@@ -118,9 +118,6 @@
     "webpack"
   ],
   "dependencies": {
-    "@types/lodash": "^4.14.116",
-    "@types/react": "^16.4.13",
-    "@types/react-dom": "^16.0.7",
     "electron-context-menu": "^0.10.0",
     "electron-debug": "^2.0.0",
     "electron-devtools-installer": "^2.2.4",
@@ -136,6 +133,10 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
+    "@types/lodash": "^4.14.116",
+    "@types/node": "^10.9.4",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
     "electron": "3.0.0-beta.8",
     "electron-builder": "^20.28.3",
     "electron-builder-squirrel-windows": "^20.28.3",
