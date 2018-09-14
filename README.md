@@ -11,7 +11,7 @@ A template for starting a new electron app quickly.
 
 Install the template locally with:
 
-```
+```sh
 template install fabiospampinato/template-electron electron
 ```
 
@@ -19,7 +19,7 @@ template install fabiospampinato/template-electron electron
 
 Create a new template with:
 
-```
+```sh
 template create electron my-app
 ```
 
