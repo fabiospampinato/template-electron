@@ -2,7 +2,7 @@
 # template-electron
 
 <p align="center">
-	<img src="template/resources/icon/icon.png" alt="Logo" width="128">
+  <img src="template/resources/icon/icon.png" alt="Logo" width="128">
 </p>
 
 A template for starting a new electron app quickly.

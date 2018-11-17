@@ -1,7 +1,7 @@
 # {{_ "startCase" name}}
 
 <p align="center">
-	<img src="resources/icon/icon.png" alt="Logo" width="128">
+  <img src="resources/icon/icon.png" alt="Logo" width="128">
 </p>
 
 {{description}}
