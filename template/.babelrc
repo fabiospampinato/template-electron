@@ -1,5 +1,5 @@
 {
   "ignore": [
-    "./static"
+    "./src/renderer/static"
   ]
 }

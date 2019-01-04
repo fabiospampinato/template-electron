@@ -8,7 +8,7 @@ import * as path from 'path';
 import {format as formatURL} from 'url';
 import Environment from '@common/enviroment';
 import pkg from '@root/package.json';
-import UMenu from '../utils/menu';
+import UMenu from '@main/utils/menu';
 import Window from './window';
 
 /* MAIN */

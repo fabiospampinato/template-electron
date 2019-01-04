@@ -1,7 +1,7 @@
 
 /* IMPORT */
 
-import '../template/index.scss';
+import '@renderer/template/index.scss';
 import {ipcRenderer as ipc} from 'electron';
 import * as React from 'react';
 
