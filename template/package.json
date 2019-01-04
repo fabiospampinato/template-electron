@@ -12,7 +12,7 @@
     "build:mac": "npm run compile && electron-builder --mac",
     "build:win": "npm run compile && electron-builder --win",
     "build:linux": "npm run compile && electron-builder --linux",
-    "build:all": "npm run compile && electron-builder -mwl",
+    "build:all": "npm run clean:releases && npm run compile && electron-builder -mwl",
     "dev": "electron-webpack dev",
     "prod": "npm run compile && CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --mac dir && open releases/mac/*.app",
     "publish": "electron-builder --publish onTag"
