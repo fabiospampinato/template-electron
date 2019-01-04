@@ -117,7 +117,8 @@
   "keywords": [
     "electron",
     "react",
-    "webpack"
+    "webpack",
+    "//TODO"
   ],
   "dependencies": {
     "electron-context-menu": "^0.10.0",
