@@ -120,17 +120,15 @@
   ],
   "dependencies": {
     "electron-context-menu": "^0.10.0",
-    "electron-debug": "^2.0.0",
     "electron-devtools-installer": "^2.2.4",
     "electron-is": "^3.0.0",
     "electron-localshortcut": "^3.1.0",
-    "electron-updater": "^3.1.2",
+    "electron-updater": "^4.0.6",
     "electron-window-state": "^4.1.1",
     "lodash": "^4.17.10",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-hot-loader": "^4.3.5",
-    "source-map-support": "^0.5.9"
+    "react-hot-loader": "^4.3.5"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
@@ -140,13 +138,13 @@
     "@types/react-dom": "^16.0.7",
     "del-cli": "^1.1.0",
     "electron": "3.0.0",
-    "electron-builder": "^20.28.3",
-    "electron-builder-squirrel-windows": "^20.28.3",
-    "electron-webpack": "^2.3.1",
-    "electron-webpack-ts": "^2.1.1",
-    "node-sass": "^4.9.3",
+    "electron-builder": "^20.38.4",
+    "electron-builder-squirrel-windows": "^20.38.3",
+    "electron-webpack": "git://github.com/fabiospampinato/electron-webpack.git#package-electron-webpack",
+    "electron-webpack-ts": "^3.1.0",
+    "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "typescript": "^3.0.3",
-    "webpack": "^4.17.1"
+    "webpack": "^4.28.2"
   }
 }
