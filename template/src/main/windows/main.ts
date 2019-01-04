@@ -159,6 +159,10 @@ class Main extends Window {
           },
           { type: 'separator' },
           {
+            label: 'View Changelog',
+            click: () => shell.openExternal ( `${pkg.repository.url}/blob/master/CHANGELOG.md` )
+          },
+          {
             label: 'View License',
             click: () => shell.openExternal ( `${pkg.repository.url}/blob/master/LICENSE` )
           }
