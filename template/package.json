@@ -8,7 +8,7 @@
     "clean:dist": "del dist",
     "clean:releases": "del releases",
     "clean": "npm-run-all -p clean:dist clean:releases",
-    "compile": "npm run clean:deps && electron-webpack app",
+    "compile": "npm run clean:deps && electron-webpack app --env.minify=false",
     "build:mac": "npm run compile && electron-builder --mac",
     "build:win": "npm run compile && electron-builder --win",
     "build:linux": "npm run compile && electron-builder --linux",
@@ -144,6 +144,8 @@
     "electron-webpack-ts": "^3.1.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
+    "terser-webpack-plugin": "^1.2.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typescript": "^3.0.3",
     "webpack": "^4.28.2"
   }
