@@ -9,6 +9,7 @@ import Identity from 'react-component-identity';
 import {Router} from 'react-router-static';
 import Environment from '@common/enviroment';
 import Routes from './routes';
+import ErrorBoundary from './components/error_boundary';
 
 /* RENDER */
 
@@ -18,7 +19,9 @@ async function render () {
 
   reactRender (
     <AppContainer>
-      <Router routes={Routes} />
+      <ErrorBoundary>
+        <Router routes={Routes} />
+      </ErrorBoundary>
     </AppContainer>,
     document.getElementById ( 'app' )
   );
