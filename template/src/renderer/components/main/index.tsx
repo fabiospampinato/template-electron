@@ -63,7 +63,7 @@ class Main extends React.Component<any,any> {
           buttonCls = bounce ? 'button disabled' : 'button';
 
     return (
-      <div id="app-content">
+      <div id="main" className="app-content">
         <img id="logo" className={logoCls} src={`file://${__static}/images/icon.png`} width="128" />
         <h1>{{#scoped}}@{{owner}}/{{/scoped}}{{name}}</h1>
         <p>{{description}}</p>
