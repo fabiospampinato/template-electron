@@ -5,7 +5,7 @@ import {app} from 'electron';
 import {autoUpdater} from 'electron-updater';
 import * as contextMenu from 'electron-context-menu';
 import * as is from 'electron-is';
-import Environment from '@common/enviroment';
+import Environment from '@common/environment';
 import Main from './windows/main';
 import Window from './windows/window';
 

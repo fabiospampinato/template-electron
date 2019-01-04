@@ -7,7 +7,7 @@ import {BrowserWindow} from 'electron';
 import * as is from 'electron-is';
 import * as windowStateKeeper from 'electron-window-state';
 import pkg from '@root/package.json';
-import Environment from '@common/enviroment';
+import Environment from '@common/environment';
 
 /* WINDOW */
 

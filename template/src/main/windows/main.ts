@@ -4,7 +4,7 @@
 import {Menu, MenuItemConstructorOptions, shell} from 'electron';
 import * as is from 'electron-is';
 import * as localShortcut from 'electron-localshortcut';
-import Environment from '@common/enviroment';
+import Environment from '@common/environment';
 import pkg from '@root/package.json';
 import UMenu from '@main/utils/menu';
 import About from './about';
