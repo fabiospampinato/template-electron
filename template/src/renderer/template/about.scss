@@ -4,10 +4,12 @@
 }
 
 #about > *:not(:last-child) {
+  margin-top: 0;
   margin-bottom: 5px;
 }
 
 #about > *:last-child {
+  margin-top: 0;
   margin-bottom:  0;
 }
 
