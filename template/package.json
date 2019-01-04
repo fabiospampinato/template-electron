@@ -18,6 +18,7 @@
     "publish": "electron-builder --publish onTag"
   },
   "electronWebpack": {
+    "staticSourceDirectory": "src/renderer/static",
     "main": {
       "webpackConfig": "webpack.js"
     },
