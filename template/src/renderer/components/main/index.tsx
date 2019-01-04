@@ -1,7 +1,6 @@
 
 /* IMPORT */
 
-import '@renderer/template/index.scss';
 import {ipcRenderer as ipc} from 'electron';
 import * as React from 'react';
 
@@ -37,7 +36,7 @@ class App extends React.Component<any,any> {
 
   /* API */
 
-  bounce () {
+  bounce = () => {
 
     this.setState ({
       bounce: true
@@ -47,7 +46,7 @@ class App extends React.Component<any,any> {
 
   }
 
-  unbounce () {
+  unbounce = () => {
 
     this.setState ({
       bounce: false
@@ -68,7 +67,7 @@ class App extends React.Component<any,any> {
         <img id="logo" className={logoCls} src={`file://${__static}/images/icon.png`} width="128" />
         <h1>{{#scoped}}@{{owner}}/{{/scoped}}{{name}}</h1>
         <p>{{description}}</p>
-        <div className={buttonCls} onClick={this.bounce.bind ( this )}>BOUNCE</div>
+        <div className={buttonCls} onClick={this.bounce}>BOUNCE</div>
       </div>
     );
 

@@ -127,7 +127,8 @@
     "lodash": "^4.17.10",
     "react": "^16.4.2",
     "react-component-identity": "^1.0.1",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-router-static": "^1.0.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",

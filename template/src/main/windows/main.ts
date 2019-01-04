@@ -4,22 +4,20 @@
 import {app, Menu, MenuItemConstructorOptions, shell} from 'electron';
 import * as is from 'electron-is';
 import * as localShortcut from 'electron-localshortcut';
-import * as path from 'path';
-import {format as formatURL} from 'url';
 import Environment from '@common/enviroment';
 import pkg from '@root/package.json';
 import UMenu from '@main/utils/menu';
-import Window from './window';
+import Route from './route';
 
 /* MAIN */
 
-class Main extends Window {
+class Main extends Route {
 
   /* CONSTRUCTOR */
 
-  constructor ( options = { minWidth: 500, minHeight: 425 }, stateOptions = { defaultWidth: 500, defaultHeight: 425 } ) {
+  constructor ( name = 'main', options = { minWidth: 500, minHeight: 425 }, stateOptions = { defaultWidth: 500, defaultHeight: 425 } ) {
 
-    super ( options, stateOptions );
+    super ( name, options, stateOptions );
 
   }
 
@@ -173,28 +171,6 @@ class Main extends Window {
     const menu = Menu.buildFromTemplate ( template );
 
     Menu.setApplicationMenu ( menu );
-
-  }
-
-  /* API */
-
-  load () {
-
-    if ( Environment.isDevelopment ) {
-
-      const {protocol, hostname, port} = Environment.wds;
-
-      this.win.loadURL ( `${protocol}://${hostname}:${port}` );
-
-    } else {
-
-      this.win.loadURL ( formatURL ({
-        pathname: path.join ( __dirname, 'index.html' ),
-        protocol: 'file',
-        slashes: true
-      }));
-
-    }
 
   }
 

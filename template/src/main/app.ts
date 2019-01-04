@@ -103,7 +103,7 @@ class App {
 
     if ( this.win && this.win.win ) return;
 
-    this.win = new Main ();
+    this.load ();
 
   }
 
@@ -120,6 +120,14 @@ class App {
     this.initDebug ();
 
     autoUpdater.checkForUpdatesAndNotify ();
+
+    this.load ();
+
+  }
+
+  /* API */
+
+  load () {
 
     this.win = new Main ();
 

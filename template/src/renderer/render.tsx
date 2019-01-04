@@ -1,11 +1,14 @@
 
 /* IMPORT */
 
+import '@renderer/template/index.scss';
+
 import * as React from 'react';
 import {render as reactRender} from 'react-dom';
 import Identity from 'react-component-identity';
+import {Router} from 'react-router-static';
 import Environment from '@common/enviroment';
-import App from './components/app';
+import Routes from './routes';
 
 /* RENDER */
 
@@ -15,7 +18,7 @@ async function render () {
 
   reactRender (
     <AppContainer>
-      <App />
+      <Router routes={Routes} />
     </AppContainer>,
     document.getElementById ( 'app' )
   );

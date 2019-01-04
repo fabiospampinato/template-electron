@@ -14,14 +14,16 @@ class Window {
 
   /* VARIABLES */
 
+  name: string;
   win: BrowserWindow;
   options: object;
   stateOptions: object;
 
   /* CONSTRUCTOR */
 
-  constructor ( options = {}, stateOptions = {} ) {
+  constructor ( name, options = {}, stateOptions = {} ) {
 
+    this.name = name;
     this.options = options;
     this.stateOptions = stateOptions;
 
@@ -106,7 +108,7 @@ class Window {
 
   /* API */
 
-  make ( id = this.constructor.name.toLowerCase (), options = this.options, stateOptions = this.stateOptions ) {
+  make ( id = this.name, options = this.options, stateOptions = this.stateOptions ) {
 
     stateOptions = _.merge ({
       file: `${id}.json`,
