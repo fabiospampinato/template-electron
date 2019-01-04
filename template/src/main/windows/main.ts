@@ -1,7 +1,7 @@
 
 /* IMPORT */
 
-import {app, Menu, MenuItemConstructorOptions, shell} from 'electron';
+import {Menu, MenuItemConstructorOptions, shell} from 'electron';
 import * as is from 'electron-is';
 import * as localShortcut from 'electron-localshortcut';
 import Environment from '@common/enviroment';
@@ -35,7 +35,7 @@ class Main extends Route {
 
     const template: MenuItemConstructorOptions[] = UMenu.filterTemplate ([
       {
-        label: app.getName (),
+        label: pkg.productName,
         submenu: [
           {
             role: 'about',
