@@ -158,11 +158,11 @@ class Main extends Route {
           { type: 'separator' },
           {
             label: 'View Changelog',
-            click: () => shell.openExternal ( `${pkg.repository.url}/blob/master/CHANGELOG.md` )
+            click: () => shell.openExternal ( `${pkg.homepage}/blob/master/CHANGELOG.md` )
           },
           {
             label: 'View License',
-            click: () => shell.openExternal ( `${pkg.repository.url}/blob/master/LICENSE` )
+            click: () => shell.openExternal ( `${pkg.homepage}/blob/master/LICENSE` )
           }
         ]
       }
