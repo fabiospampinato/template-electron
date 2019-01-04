@@ -4,9 +4,9 @@
 import {ipcRenderer as ipc} from 'electron';
 import * as React from 'react';
 
-/* APP */
+/* MAIN */
 
-class App extends React.Component<any,any> {
+class Main extends React.Component<any,any> {
 
   /* CONSTRUCTOR */
 
@@ -77,4 +77,4 @@ class App extends React.Component<any,any> {
 
 /* EXPORT */
 
-export default App;
+export default Main;
