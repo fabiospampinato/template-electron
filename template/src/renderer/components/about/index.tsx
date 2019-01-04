@@ -8,7 +8,7 @@ import pkg from '@root/package.json';
 /* ABOUT */
 
 const About = () => (
-  <div id="about">
+  <div id="about" className="app-content">
     <img src={`file://${path.join ( __static, 'images', 'icon.png' )}`} width={64} />
     <p className="title">{pkg.productName}</p>
     <p className="desc">Version {pkg.version}</p>

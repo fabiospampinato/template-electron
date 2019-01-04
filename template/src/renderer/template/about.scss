@@ -2,16 +2,22 @@
 #about {
   background-color: #ececec;
   display: flex;
-  flex-direction: bottom;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 #about > *:not(:last-child) {
   margin-bottom: 5px;
 }
 
+#about > *:last-child {
+  margin-bottom:  0;
+}
+
 #about .title {
   font-weight: bold;
+  margin-top: 0;
 }
 
 #about .desc {
