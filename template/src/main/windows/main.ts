@@ -7,6 +7,7 @@ import * as localShortcut from 'electron-localshortcut';
 import Environment from '@common/enviroment';
 import pkg from '@root/package.json';
 import UMenu from '@main/utils/menu';
+import About from './about';
 import Route from './route';
 
 /* MAIN */
@@ -38,12 +39,11 @@ class Main extends Route {
         label: pkg.productName,
         submenu: [
           {
-            role: 'about',
-            visible: is.macOS ()
+            label: `About ${pkg.productName}`,
+            click: () => new About ()
           },
           {
-            type: 'separator',
-            visible: is.macOS ()
+            type: 'separator'
           },
           {
             role: 'services',

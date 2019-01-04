@@ -1,0 +1,19 @@
+
+#about {
+  background-color: #ececec;
+  display: flex;
+  flex-direction: bottom;
+  align-items: center;
+}
+
+#about > *:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+#about .title {
+  font-weight: bold;
+}
+
+#about .desc {
+  font-size: .5946142301em;
+}
