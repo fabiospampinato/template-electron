@@ -120,7 +120,6 @@ class Window {
           dimensions = _.pick ( state, ['x', 'y', 'width', 'height'] );
 
     options = _.merge ( dimensions, {
-      autoHideMenuBar: true,
       backgroundColor: '#ffffff',
       icon: path.join ( __static, 'images', `icon.${is.windows () ? 'ico' : 'png'}` ),
       show: false,
