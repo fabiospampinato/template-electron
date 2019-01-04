@@ -3,16 +3,20 @@
 
 import * as React from 'react';
 import {render as reactRender} from 'react-dom';
-import {AppContainer} from 'react-hot-loader';
+import Identity from 'react-component-identity';
 import Environment from '@common/enviroment';
 import App from './components/app';
 
 /* RENDER */
 
-function render () {
+async function render () {
+
+  const AppContainer = Environment.isDevelopment ? ( await import ( 'react-hot-loader' ) ).AppContainer : Identity;
 
   reactRender (
-    Environment.isDevelopment ? <AppContainer><App /></AppContainer> : <App />,
+    <AppContainer>
+      <App />
+    </AppContainer>,
     document.getElementById ( 'app' )
   );
 

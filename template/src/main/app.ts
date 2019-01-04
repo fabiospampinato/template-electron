@@ -4,7 +4,6 @@
 import {app} from 'electron';
 import {autoUpdater} from 'electron-updater';
 import * as contextMenu from 'electron-context-menu';
-import installExtension, { REACT_DEVELOPER_TOOLS } from 'electron-devtools-installer';
 import * as is from 'electron-is';
 import Environment from '@common/enviroment';
 import pkg from '@root/package.json';
@@ -58,9 +57,11 @@ class App {
 
   }
 
-  initDebug () {
+  async initDebug () {
 
     if ( !Environment.isDevelopment ) return;
+
+    const {default: installExtension, REACT_DEVELOPER_TOOLS} = await import ( 'electron-devtools-installer' );
 
     installExtension ( REACT_DEVELOPER_TOOLS );
 
