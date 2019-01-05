@@ -1,2 +1,2 @@
-### Version 1.0.0
-- Initial release.
+### Version {{version}}
+- Initial release
