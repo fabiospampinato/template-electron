@@ -1,23 +1,25 @@
 
 #about {
+
   background-color: #ececec;
-}
 
-#about > *:not(:last-child) {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
+  & > *:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
 
-#about > *:last-child {
-  margin-top: 0;
-  margin-bottom:  0;
-}
+  & > *:last-child {
+    margin-top: 0;
+    margin-bottom:  0;
+  }
 
-#about .title {
-  font-weight: bold;
-  margin-top: 0;
-}
+  & .title {
+    font-weight: bold;
+    margin-top: 0;
+  }
 
-#about .desc {
-  font-size: .5946142301em;
+  & .desc {
+    font-size: .5946142301em;
+  }
+
 }
