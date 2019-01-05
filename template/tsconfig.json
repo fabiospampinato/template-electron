@@ -15,7 +15,7 @@
       "@main/*": ["main/*"],
       "@renderer/*": ["renderer/*"],
       "@root/*": ["../*"],
-      "@static/*": ["renderer/static"]
+      "@static/*": ["renderer/static/*"]
     }
   }
 }
