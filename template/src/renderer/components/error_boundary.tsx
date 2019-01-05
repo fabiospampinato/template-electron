@@ -41,7 +41,7 @@ class ErrorBoundary extends React.Component<any, { error?: Error }> {
 
     return (
       <div id="error-boundary" className="app-content">
-        <h1 className="text-center">An Error Occurred!</h1>
+        <h1>An Error Occurred!</h1>
         <pre className="error-stack">{error.stack}</pre>
         <div className="button" onClick={this.report}>Report It</div>
       </div>
